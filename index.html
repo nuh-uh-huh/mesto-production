@@ -3,8 +3,14 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
     <script type="module" crossorigin src="./assets/index-BjB561g1.js"></script>
@@ -25,10 +31,20 @@
           <div class="profile__image"></div>
           <div class="profile__info">
             <h1 class="profile__title"></h1>
-            <button class="profile__edit-button" type="button"></button>
+
+            <button
+              class="profile__edit-button"
+              type="button"
+            ></button>
+
             <p class="profile__description"></p>
           </div>
-          <button class="profile__add-button" type="button"></button>
+
+          <button
+            class="profile__add-button"
+            type="button"
+          ></button>
+
         </section>
         <section class="places page__section">
           <ul class="places__list"></ul>
@@ -44,14 +60,24 @@
           <h3 class="popup__title">Редактировать профиль</h3>
           <form class="popup__form" name="edit-profile" novalidate>
             <label class="popup__label">
-              <input name="user-name" id="user-name" class="popup__input popup__input_type_name" placeholder="Имя"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" minlength="2"
-                maxlength="40" pattern="^[a-z A-Z а-я А-Я \- \s]+$" required />
+
+              <input
+                name="user-name" id="user-name"
+                class="popup__input popup__input_type_name" placeholder="Имя"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                minlength="2" maxlength="40" pattern="^[a-z A-Z а-я А-Я \- \s]+$" required
+              />
+
               <span class="popup__error" id="user-name-error"></span>
             </label>
             <label class="popup__label">
-              <input name="user-description" id="user-description" class="popup__input popup__input_type_description"
-                placeholder="Занятие" minlength="2" maxlength="200" required />
+
+              <input
+                name="user-description" id="user-description"
+                class="popup__input popup__input_type_description" placeholder="Занятие"
+                minlength="2" maxlength="200" required
+              />
+
               <span class="popup__error" id="user-description-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
@@ -67,20 +93,33 @@
           <h3 class="popup__title">Новое место</h3>
           <form class="popup__form" name="new-place" novalidate>
             <label class="popup__label">
-              <input name="place-name" id="place-name" class="popup__input popup__input_type_card-name"
-                placeholder="Название"
-                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" minlength="2"
-                maxlength="40" pattern="^[a-z A-Z а-я А-Я \- \s]+$" />
+
+              <input
+                name="place-name" id="place-name"
+                class="popup__input popup__input_type_card-name" placeholder="Название"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                minlength="2" maxlength="40" pattern="^[a-z A-Z а-я А-Я \- \s]+$"
+              />
+              
               <span class="popup__error" id="place-name-error"></span>
             </label>
             <label class="popup__label">
-              <input name="place-link" id="place-link" class="popup__input popup__input_type_url"
-                placeholder="Ссылка на картинку" type="url" />
+
+              <input
+                name="place-link" id="place-link"
+                class="popup__input popup__input_type_url"
+                placeholder="Ссылка на картинку" type="url"
+              />
+              
               <span class="popup__error" id="place-link-error"></span>
             </label>
-            <button type="submit" class="button popup__button popup__button_disabled" disabled>
+
+            <button type="submit"
+              class="button popup__button popup__button_disabled"
+            disabled>
               Создать
             </button>
+
           </form>
         </div>
       </div>
@@ -111,8 +150,13 @@
           <h3 class="popup__title">Обновить аватар</h3>
           <form class="popup__form" name="edit-avatar" novalidate>
             <label class="popup__label">
-              <input name="user-avatar" id="user-avatar" class="popup__input popup__input_type_avatar"
-                placeholder="Ссылка на изображение" type="url" />
+
+              <input
+                name="user-avatar" id="user-avatar"
+                class="popup__input popup__input_type_avatar"
+                placeholder="Ссылка на изображение" type="url"
+              />
+
               <span class="popup__error" id="user-avatar-error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
@@ -139,8 +183,12 @@
       <li class="places__item card">
         <img class="card__image" src="" alt="" />
         <div class="card__control">
+
           <!--<button type="button" class="card__control-button card__control-button_type_info"></button>-->
-          <button type="button" class="card__control-button card__control-button_type_delete"></button>
+          <button type="button"
+            class="card__control-button card__control-button_type_delete"
+          ></button>
+
         </div>
         <div class="card__description">
           <h2 class="card__title"></h2>
